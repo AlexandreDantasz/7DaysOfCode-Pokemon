@@ -1,29 +1,43 @@
-﻿namespace Pokemon.Request;
+﻿using System.Text.Json.Serialization;
+
+namespace Pokemon.Request;
 
 public class NamedApiResource
 {
-    public string name { get ; set;} = string.Empty;
-    public string url { get ; set;} = string.Empty;
+    [JsonPropertyName("name")]
+    public string Name { get ; set;} = string.Empty;
+    [JsonPropertyName("url")]
+    public string Url { get ; set;} = string.Empty;
 }
 
-public class GetNamedList
+public class PokemonList
 {
-    public int count { get; set; }
-    public string next { get; set; } = string.Empty;
-
-    public string previous { get; set; } = string.Empty;
-
-    public List<NamedApiResource> results { get; set; } = new List<NamedApiResource>();
+    [JsonPropertyName("count")]
+    public int Count { get; set; }
+    [JsonPropertyName("next")]
+    public string Next { get; set; } = string.Empty;
+    [JsonPropertyName("previous")]
+    public string Previous { get; set; } = string.Empty;
+    [JsonPropertyName("results")]
+    public List<NamedApiResource> Results { get; set; } = [];
 
 }
 
 public class PokemonAbility
 {
-    public Boolean is_hidden { get; set; }
-    public int slot { get; set; }
-    public NamedApiResource ability { get; set; } = new NamedApiResource();
+    [JsonPropertyName("is_hidden")]
+    public Boolean Is_hidden { get; set; }
+    [JsonPropertyName("slot")]
+    public int Slot { get; set; }
+    [JsonPropertyName("ability")]
+    public NamedApiResource Ability { get; set; } = new NamedApiResource();
 }
-public class GetAbilities
+public class PokemonStats
 {
-        public List<PokemonAbility> abilities { get; set; } = new List<PokemonAbility>();
+    [JsonPropertyName("height")]
+    public int Height { get ; set; }
+    [JsonPropertyName("weight")]
+    public int Weight { get; set; }
+    [JsonPropertyName("abilities")]
+    public List<PokemonAbility> Abilities { get; set; } = [];
 }

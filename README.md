@@ -6,3 +6,7 @@ No primeiro dia, é preciso iniciar uma aplicação back-end em C#, consumindo a
 - [x] Desenvolver uma funcionalidade onde o jogador poderá acessar uma lista de opções de espécies de pokémons
 - [x] Visualizar suas características para facilitar sua escolha antes da adoção.
 
+## Dia 2 (branch dia/2)
+O desafio é extrair as características relevantes da resposta JSON e exibi-las de maneira organizada.
+- [x] Criar uma classe que representa um mascote e coloque os atributos com o mesmo nome e tipo de dados dos campos retornados no JSON
+- [x] Converter o resultado da API neste objeto criado
