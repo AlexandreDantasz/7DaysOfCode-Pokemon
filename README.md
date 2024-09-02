@@ -14,10 +14,10 @@ O desafio é extrair as características relevantes da resposta JSON e exibi-las
 ## Dia 3 (branch dia/3)
 O desafio de hoje é trabalhar a saída de dados através da construção de um menu divertido para dar vida ao aplicativo de console. 
 A ideia será criar um menu interativo, com opções e mensagens divertidas para o usuário.
-- [] Dar boas vindas ao usuário, ler o nome da pessoa e dados relevantes
-- [] Exibir um menu que possibilite: “Adoção de mascotes”, “Ver mascotes adotados” e “Sair do Jogo”
+- [x] Dar boas vindas ao usuário, ler o nome da pessoa e dados relevantes
+- [x] Exibir um menu que possibilite: “Adoção de mascotes”, “Ver mascotes adotados” e “Sair do Jogo”
 
 ### O que é esperado do menu de adoção?
-- [] Que o jogador possa escolher uma espécie e ver ou não suas características antes de adotá-lo
-- [] Que o jogador possa ver detalhes sobre as espécies que desejar antes de fazer a escolha da adoção
-- [] Que caso o jogador goste das características do mascote, ele possa realizar a adoção do mesmo
+- [x] Que o jogador possa escolher uma espécie e ver ou não suas características antes de adotá-lo
+- [x] Que o jogador possa ver detalhes sobre as espécies que desejar antes de fazer a escolha da adoção
+- [x] Que caso o jogador goste das características do mascote, ele possa realizar a adoção do mesmo
