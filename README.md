@@ -21,3 +21,19 @@ A ideia será criar um menu interativo, com opções e mensagens divertidas para
 - [x] Que o jogador possa escolher uma espécie e ver ou não suas características antes de adotá-lo
 - [x] Que o jogador possa ver detalhes sobre as espécies que desejar antes de fazer a escolha da adoção
 - [x] Que caso o jogador goste das características do mascote, ele possa realizar a adoção do mesmo
+
+## Dia 4 (branch dia/4)
+O desafio de hoje é remodelar a arquitetura do projeto para o padrão MVC (Model, View e Controller).
+A arquitetura, de forma simplificada, é a estrutura de organização das classes e recursos e a comunicação entre eles.
+
+### Model: Modelo e acesso a dados
+São essas classes que definirão os padrões dos dados e terão acesso ao banco de dados.
+Esse projeto não usa um banco de dados, porém, usará um modelo com os dados da API.
+
+### View: Front-end
+É onde são colocadas as telas, como, por exemplo, o HTML em casos de aplicações web, janelas em casos de aplicações desktop e, nesse caso, a classe de comunicação com o usuário. Os objetos contidos na View são  requisitados pela camada Controller e exibem a interface e os dados que vieram do Model.
+
+### Controller: Lógica da aplicação
+Essa camada é onde se aplicam as regras da aplicação e onde se relacionam os modelos e as views.
+
+Obs: Eu concluí os objetivos do desafio do dia 4 no dia 3, portanto, apenas excluí uma classe que não estava sendo usada
